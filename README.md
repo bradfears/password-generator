@@ -1,5 +1,5 @@
 # PowerShell function to create random passwords
-
+```
 def generate_password(username):
 
     # Generate password
@@ -10,3 +10,4 @@ def generate_password(username):
     password_string = subprocess.run(['/usr/bin/openssl', 'passwd', '-salt', password_salt, password_salt], capture_output=True, text=True)    
     password = (password_string.stdout).rstrip()
     return(password, password_salt)
+```
