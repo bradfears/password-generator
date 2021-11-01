@@ -1,4 +1,3 @@
-# password-generator
 # PowerShell function to create random passwords
 
 def generate_password(username):
